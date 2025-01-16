@@ -1,0 +1,12 @@
+# Install the necessary R packages using the following commands:
+install.packages(c("quanteda", "dplyr", "tidyr", "ggplot2", "lubridate"))
+
+# Prepare the Dataset: Place the MN-DS-news-classification.csv dataset in the same directory as the scripts
+
+# Run the Scripts in Sequence:
+source("data_cleaning.R")
+source("keyword_extraction.R")
+source("trend_analysis.R")
+
+# The extracted keywords and their frequencies will be saved in result_long.csv.
+# Scatterplots visualizing keyword trends will be saved as PNG files.
